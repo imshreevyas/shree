@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Controller;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,19 +13,6 @@ use App\Http\Controllers\Controller;
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// });
-
-
-// Admin
-
-
-// Users
-Route::prefix('/')->group(function () {
-    
-    Route::get('/home', [FrontendController::class, 'index']);
-
-
-    
+Route::get('/', function () {
+    return view('index');
 });
